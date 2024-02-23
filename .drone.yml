@@ -25,7 +25,7 @@ steps:
       - git checkout ${DRONE_SOURCE_BRANCH}
       - git merge main
       - pnpm install --silent
-      - pnpm test:prepare
+      - pnpm build
 
   - name: test
     image: mhealthvn/node-tester:master

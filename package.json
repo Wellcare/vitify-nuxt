@@ -10,7 +10,10 @@
     "prepare": "husky",
     "preview": "cross-env NODE_OPTIONS='--no-warnings=ExperimentalWarning' nuxt preview",
     "typecheck": "cross-env NODE_OPTIONS='--no-warnings=ExperimentalWarning' nuxt typecheck",
+    "readme:coverage": "istanbul-badges-readme",
     "test": "cross-env NODE_OPTIONS='--no-warnings=ExperimentalWarning' vitest",
+    "test:ci": "vitest run --coverage.enabled --coverage.reporter='json-summary'",
+    "test:dev": "vitest",
     "lint": "eslint . --fix --ignore-path .gitignore"
   },
   "devDependencies": {
@@ -36,6 +39,7 @@
     "@pinia/nuxt": "^0.5.1",
     "@vueuse/nuxt": "^10.8.0",
     "echarts": "^5.5.0",
+    "istanbul-badges-readme": "^1.8.5",
     "nuxt-auth-utils": "^0.0.18",
     "vue-echarts": "^6.6.9"
   },
