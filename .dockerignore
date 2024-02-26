@@ -1,0 +1,16 @@
+**
+!app
+!assets
+!components
+!middleware
+!modules
+!pages
+!plugins
+!public
+!server
+!stores
+!.env.production
+!*.js
+!*.json
+!*.ts
+!*.vue
